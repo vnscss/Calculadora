@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <div class="main">
+        <div class="windowControls">
+            <img src="assets/Captura de tela 2024-01-08 134537.png" alt="">
+            <p>Calculadora</p>
+            <p>-</p>
+            <p>🔳</p>
+            <p>x</p>
+        </div>
+        
+        <div class="topbar">
+            <button class="menu">=</button>
+            <p>Padrão</p>
+            <button class="hist">R</button>
+        </div>
+       
+        <div class="result">
+            <p id="historico">ㅤ</p>
+            <p id="hiddenHistorico" style="display: none;">ㅤ</p>
+            <p id="display">0</p>
+            <p id="hiddenDisplay" style="display: none;"></p>
+        </div>
+       
+        <div class="buttons">
+            <table>
+                <lu>
+                    <li>
+                        <button class="sig">%</button>
+                        <button class="sig" onclick="clean()">CE</button>
+                        <button class="sig" onclick="clean()">C</button>
+                        <button class="sig">back</button>
+                    </li>
+                   
+                    <li>
+                        <button class="sig">1/x</button>
+                        <button class="sig">x²</button>
+                        <button class="sig">2vx</button>
+                        <button class="sig" onclick="conta('/')">div</button>
+                    </li>
+                   
+                    <li>
+                        <button class="numb" onclick="save('7'),draw('7')">7</button>
+                        <button class="numb" onclick="save('8'),draw('8')">8</button>
+                        <button class="numb" onclick="save('9'),draw('9')">9</button>
+                        <button class="sig" onclick="conta('*')">x</button>
+                    </li>
+                    
+                    <li>
+                        <button class="numb" onclick="save('4'),draw('4')">4</button>
+                        <button class="numb" onclick="save('5'),draw('5')">5</button>
+                        <button class="numb" onclick="save('6'),draw('6')">6</button>
+                        <button class="sig" onclick="conta('-')">-</button>
+                    </li>
+                    
+                    <li>
+                        <button class="numb" onclick="save('1'),draw('1')">1</button>
+                        <button class="numb" onclick="save('2'),draw('2')">2</button>
+                        <button class="numb" onclick="save('3'),draw('3')">3</button>
+                        <button class="sig" onclick="conta('+')">+</button>
+                    </li>
+                    
+                    <li>
+                        <button class="numb">+/-</button>
+                        <button class="numb" onclick="save('0'),draw('0')">0</button>
+                        <button class="numb" onclick="drawVirgula(',')">,</button>
+                        <button class="igual" style="color: #2e475c;" onclick="igual()">=</button>
+                    </li>
+                </lu>
+            </table>
+        </div>
+        <div class="gap" style="width: 1px; height: 2px;">
+
+        </div>
+    </div>
+</body>
+</html>

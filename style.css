@@ -1,0 +1,117 @@
+body{
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vb ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Segoe UI;
+    font-weight: lighter;
+    overflow: hidden;
+}
+
+
+.main{
+    width: 370px; 
+    height: 563px;
+    min-width: 200px;
+    min-height: 370px;
+    resize: both;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 21px 30px auto 60% 5px;
+    grid-template-columns: 100%;
+    resize: both;
+    background-color: #202020;
+}
+
+
+.windowControls{
+    width: 100%;
+    height: 10px;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px;
+    grid-template-rows: auto;
+}
+
+.windowControls img{
+    width: 10px;
+}
+
+.windowControls p {
+    width: 10px;
+    margin: 0;
+}
+
+.topbar{
+    display: grid;
+    grid-template-columns: 20px 20px 20px;
+    grid-template-rows: auto;
+}
+
+.result p {
+    text-align: right;
+}
+
+.buttons{
+    width: 100%;
+    min-width: 185px;
+    height: 100%;
+    display: flexbox;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+}
+lu{
+    height: 100%;
+    display: grid;
+    margin: 2px;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: ;
+    
+}
+
+.buttons button{
+    border: none;
+    border-style: none;
+    border-radius: 5px;
+    margin: 1px;
+    font-size: 20px;
+    color: white;
+}
+
+.sig{
+    width: 100%;
+    background-color: #323232;
+}
+
+.sig:hover{
+    background-color: #3b3b3b;
+}
+
+.numb{
+    width: 100%;
+    background-color: #3b3b3b;
+}
+
+.numb:hover{
+    background-color: #323232;
+}
+
+.igual{
+    width: 100%;
+    background-color: #76b9ed;
+}
+
+.igual:hover{
+    background-color: #6cacdc;
+}
